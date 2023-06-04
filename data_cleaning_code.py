@@ -29,6 +29,7 @@ data.loc[:, "pick_weekday"] = data["tpep_pickup_datetime"].dt.weekday
 data.loc[:, "pick_month"] = data["tpep_pickup_datetime"].dt.month
 data.loc[:, "pick_year"] = data["tpep_pickup_datetime"].dt.year
 
+
 # print(data.info())
 
 data.loc[:, "drop_hour"] = data["tpep_pickup_datetime"].dt.hour
@@ -40,4 +41,3 @@ data.loc[:, "drop_year"] = data["tpep_pickup_datetime"].dt.year
 # print(data.info())
 
 data["datetime_id"] = data.index
-# print(data["datetime_id"])
